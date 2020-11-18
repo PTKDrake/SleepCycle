@@ -6,22 +6,22 @@ function sleep(type, data) {
     let output = "";
     if (args.length > 1) {
         data.log(args[1]);
-        if (date_time.isValid(args[1], 'HH:mm:ss')) {
-            date = date_time.addYears(date_time.parse(args[1], 'HH:mm:ss'), 1);
-        } else if (date_time.isValid('0' + args[1], 'HH:mm:ss')) {
-            date = date_time.addYears(date_time.parse('0' + args[1], 'HH:mm:ss'), 1);
+        if (date_time.isValid(args[1], 'HH:mm')) {
+            date = date_time.addYears(date_time.parse(args[1], 'HH:mm'), 1);
+        } else if (date_time.isValid('0' + args[1], 'HH:mm')) {
+            date = date_time.addYears(date_time.parse('0' + args[1], 'HH:mm'), 1);
         } else {
             return ({
                 handler: "internal",
-                data: "Thời gian không hợp lệ. Kiểu thời gian hợp lệ: HH:mm:ss, ví dụ: 6:30|6:30:00"
+                data: "Thời gian không hợp lệ. Kiểu thời gian hợp lệ: HH:mm, ví dụ: 06:30|6:30"
             });
         }
-        output += `Nếu bạn muốn thức dậy lúc ${date_time.format(date, 'HH:mm:ss')} thì bạn nên đi ngủ lúc: `;
+        output += `Nếu bạn muốn thức dậy lúc ${date_time.format(date, 'HH:mm')} thì bạn nên đi ngủ lúc: `;
         for (let i = 7; i >= 1; i--) {
             if (i < 7) {
                 output += " hoặc ";
             }
-            output += date_time.format(new Date(date.getTime() - (i * 90 + 15) * 60000), 'HH:mm:ss');
+            output += date_time.format(new Date(date.getTime() - (i * 90 + 15) * 60000), 'HH:mm');
             switch (i) {
                 case 5:
                     output += '(gần đủ)';
@@ -37,12 +37,12 @@ function sleep(type, data) {
             }
         }
     } else {
-        output += `Nếu bạn đi ngủ bây giờ(${date_time.format(date, 'HH:mm:ss')}) thì bạn nên dậy vào lúc: `;
+        output += `Nếu bạn đi ngủ bây giờ(${date_time.format(date, 'HH:mm')}) thì bạn nên dậy vào lúc: `;
         for (let i = 1; i <= 7; i++) {
             if (i > 1) {
                 output += " hoặc ";
             }
-            output += date_time.format(new Date(date.getTime() + (i * 90 + 15) * 60000), 'HH:mm:ss');
+            output += date_time.format(new Date(date.getTime() + (i * 90 + 15) * 60000), 'HH:mm');
             switch (i) {
                 case 5:
                     output += '(gần đủ)';

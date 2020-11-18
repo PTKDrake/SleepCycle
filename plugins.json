@@ -5,8 +5,8 @@
   "command_map": {
     "sleep": {
       "hargs": {
-        "en_US": "[Time to wake up(HH:mm:ss)]",
-        "vi_VN": "[Thời gian muốn thức dậy(HH:mm:ss)]"
+        "en_US": "[Time to wake up(HH:mm)]",
+        "vi_VN": "[Thời gian muốn thức dậy(HH:mm)]"
       },
       "hdesc": {
         "en_US": "Calculate the sleep cycle.",
