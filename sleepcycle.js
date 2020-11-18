@@ -73,5 +73,5 @@ function parse(time){
 }
 
 module.exports = {
-    sleep
+    sleep, wake_up
 };
