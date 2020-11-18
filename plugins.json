@@ -14,6 +14,18 @@
       },
       "fscope": "sleep",
       "compatibly": 3
+    },
+    "wake_up": {
+      "hargs": {
+        "en_US": "<Time to wake up(HH:mm)>",
+        "vi_VN": "<Thời gian muốn thức dậy(HH:mm)>"
+      },
+      "hdesc": {
+        "en_US": "Set time to wake up. I will remind you to go to bed <3",
+        "vi_VN": "Đặt thời gian bạn muốn thức dậy. Tôi sẽ nhắc bạn đi ngủ <3."
+      },
+      "fscope": "wake_up",
+      "compatibly": 3
     }
   },
   "node_depends": {
