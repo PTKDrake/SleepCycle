@@ -1,0 +1,25 @@
+{
+  "plugin_name": "SleepCycle",
+  "plugin_scope": "sleepcycle",
+  "plugin_exec": "sleepcycle.js",
+  "command_map": {
+    "sleep": {
+      "hargs": {
+        "en_US": "[Time to wake up(HH:mm:ss)]",
+        "vi_VN": "[Thời gian muốn thức dậy(HH:mm:ss)]"
+      },
+      "hdesc": {
+        "en_US": "Calculate the sleep cycle.",
+        "vi_VN": "Tính chu kì giấc ngủ."
+      },
+      "fscope": "sleep",
+      "compatibly": 3
+    }
+  },
+  "node_depends": {
+    "date-and-time": ""
+  },
+  "author": "PTKDrake",
+  "version": "1.0",
+  "complied_for": "0.5.0"
+}
