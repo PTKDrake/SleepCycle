@@ -56,6 +56,7 @@ function sleep(type, data) {
             }
         }
     }
+    output += '\nNhớ đi ngủ sớm nha <3 <3.';
     return ({
         handler: "internal",
         data: output
