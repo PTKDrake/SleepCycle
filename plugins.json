@@ -17,8 +17,8 @@
     },
     "remind_sleep": {
       "hargs": {
-        "en_US": "<Time to go to bed(HH:mm)>",
-        "vi_VN": "<Thời gian muốn đi ngủ(HH:mm)>"
+        "en_US": "<Time to go to bed(HH:mm) | off/unset/huỷ>",
+        "vi_VN": "<Thời gian muốn đi ngủ(HH:mm) | off/unset/huỷ>"
       },
       "hdesc": {
         "en_US": "Set time to go to bed. I will remind you to go to bed <3",
