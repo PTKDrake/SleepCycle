@@ -6,8 +6,8 @@ var langMap = {
     'vi_VN': {
         remind_sleep_use: 'Sử dụng: %0% %1% để %2%',
         date_invalid: 'Thời gian không hợp lệ. Kiểu thời gian hợp lệ: HH:mm, ví dụ: 06:30|6:30.',
-        sleep_wake_up: 'Nếu bạn muốn thức dậy lúc %0% thì bạn nên đi ngủ lúc: %1%%2%',
-        sleep_now: 'Nếu bạn đi ngủ bây giờ(%0%) thì bạn nên dậy vào lúc: %1%%2%',
+        sleep_wake_up: 'Nếu bạn muốn thức dậy lúc %0% thì bạn nên đi ngủ lúc: %1%.%2%',
+        sleep_now: 'Nếu bạn đi ngủ bây giờ(%0%) thì bạn nên dậy vào lúc: %1%.%2%',
         sleep_msg: '\nNhớ đi ngủ sớm nha <3 <3.',
         or: ' hoặc ',
         info1: '(Gần đủ giấc)',
@@ -21,8 +21,8 @@ var langMap = {
     'en_US': {
         remind_sleep_use: 'Use: %0% %1% to %2%',
         date_invalid: 'Invalid time. Valid time type: HH:mm, for example: 06: 30|6:30.',
-        sleep_wake_up: 'If you want to wake up at %0% then you should go to bed at: %1%%2%',
-        sleep_now: 'If you go to bed now(%0%) then you should wake up at: %1%%2%',
+        sleep_wake_up: 'If you want to wake up at %0% then you should go to bed at: %1%.%2%',
+        sleep_now: 'If you go to bed now(%0%) then you should wake up at: %1%.%2%',
         sleep_msg: '\nRemember to go to bed early <3 <3.',
         or: ' or ',
         info1: '(Near enough sleep)',
