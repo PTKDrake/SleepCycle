@@ -213,7 +213,7 @@ function list(date, minus = false, lang = global.config.language){
             string += getLang('or', lang);
         }
         if(minus){
-            i = 7 - i;
+            i = 8 - i;
             string += date_time.format(new Date(date.getTime() - (i * 90 + 15) * 60000), 'HH:mm');
         }
         else string += date_time.format(new Date(date.getTime() + (i * 90 + 15) * 60000), 'HH:mm');
