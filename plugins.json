@@ -15,16 +15,16 @@
       "fscope": "sleep",
       "compatibly": 3
     },
-    "wake_up": {
+    "remind_sleep": {
       "hargs": {
-        "en_US": "<Time to wake up(HH:mm)>",
-        "vi_VN": "<Thời gian muốn thức dậy(HH:mm)>"
+        "en_US": "<Time to go to bed(HH:mm)>",
+        "vi_VN": "<Thời gian muốn đi ngủ(HH:mm)>"
       },
       "hdesc": {
-        "en_US": "Set time to wake up. I will remind you to go to bed <3",
-        "vi_VN": "Đặt thời gian bạn muốn thức dậy. Tôi sẽ nhắc bạn đi ngủ <3."
+        "en_US": "Set time to go to bed. I will remind you to go to bed <3",
+        "vi_VN": "Đặt thời gian bạn muốn đi ngủ. Tôi sẽ nhắc bạn đi ngủ <3."
       },
-      "fscope": "wake_up",
+      "fscope": "remind_sleep",
       "compatibly": 3
     }
   },
