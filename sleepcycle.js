@@ -137,7 +137,7 @@ function sleep(type, data) {
     }
     params.push(
         date_time.format(date, 'HH:mm'),
-        list(date, true, lang),
+        list(date, args.length > 1, lang),
         getLang('sleep_msg', lang)
     );
     return ({
@@ -214,9 +214,9 @@ function list(date, minus = false, lang = global.config.language){
         }
         if(minus){
             i = 8 - i;
-            string += date_time.format(new Date(date.getTime() - (i * 90 + 15) * 60000), 'HH:mm');
+            string += date_time.format(new Date(date.getTime() - (i * 90 + 15) * 60 * 1000), 'HH:mm');
         }
-        else string += date_time.format(new Date(date.getTime() + (i * 90 + 15) * 60000), 'HH:mm');
+        else string += date_time.format(new Date(date.getTime() + (i * 90 + 15) * 60 * 1000), 'HH:mm');
         switch (i) {
             case 5:
                 string += getLang('info1', lang);
