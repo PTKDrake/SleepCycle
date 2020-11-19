@@ -228,7 +228,7 @@ function list(date, minus = false, lang = global.config.language){
                 string += getLang('info3', lang);
                 break;
         }
-        if (minus) i = 7 - i;
+        if (minus) i = 8 - i;
     }
     return string;
 }
