@@ -101,9 +101,9 @@ function loadRemind(time){
     if(date.getTime() <= now.getTime()) date = date_time.addDays(date, 1);
     let ms = date - now;
     setTimeout(function(){
-        let users = remind_times[time] ?? [];
+        let users = remind_times.hasOwnProperty(time) ? remind_times[time] : [];
         users.forEach(function(user){
-            let text = getLang('remind_sleep', global.data.userLanguage[user] ?? global.config.language, [date_time.format(date, 'HH:mm')]);
+            let text = getLang('remind_sleep', global.data.userLanguage.hasOwnProperty(user) ? global.data.userLanguage[user] : global.config.language, [date_time.format(date, 'HH:mm')]);
             global.fbchat(user, text);
         });
         setTimeout(() => loadRemind(time), 10);
